@@ -46,7 +46,7 @@ namelist.input
 To run the simulations, place the files from (2), (3), (4) and namelist.input from (5) to the `WRF/run` directory, and then run `wrf.exe`:
 
 	# Copy the provided files to the WRF/run directory
-	cp AOD202004_d01 AOD202004_d02  \
+	cp AOD_20070720_20070805_d01 AOD_20070720_20070805_d02  \
  		varlist.txt \
 		wrfbdy_d01 wrfinput_d01  \
   		wrfinput_d02 wrflowinp_d01 wrflowinp_d02 \
