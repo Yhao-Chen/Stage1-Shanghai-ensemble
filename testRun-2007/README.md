@@ -33,7 +33,7 @@ wrflowinp_d02
 ```
 ## 5. namelist.wps and namelist.input:
 
-*[namelist.wps](../namelist.wps)* defines 2 [domains](../Stage1_Shanghai_ensemble_domain.png): ESA-12 d01 - the outer domain in Lambert Conformal projection named ESA-12, and 	YRD-3 d02 - the inner domain centered around Shanghai.
+*[namelist.wps](./namelist.wps)* defines 2 [domains](../Stage1_Shanghai_ensemble_domain.png): ESA-12 d01 - the outer domain in Lambert Conformal projection named EAS-12, and 	YRD-3 d02 - the inner domain centered around Shanghai.
 *[namelist.input](./namelist.input)* is set to run with BouLac PBL scheme (`bl_pbl_physics = 8`) and BEP+BEM urban scheme (`sf_urban_physics = 3`). 
 ```
 namelist.wps
