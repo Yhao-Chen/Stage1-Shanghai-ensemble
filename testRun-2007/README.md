@@ -1,4 +1,4 @@
-# FPS-URB-RCC Test-7d WRF simulation
+# FPS-URB-RCC Test-2007 WRF simulation
 
 The first test **Test-7d** run is set to be performed for 14 days (i.e. 2007.07.21-2007.08.05) prior to the [STAGE-1](./STAGE-1) simulation in order to verify if the WRF model with an urban scheme turned on and the LCZ categories can be run successfully by all the groups involved in the Stage1-Shanghai-Ensemble activities, and how fast. Each of the group should use the same setting to perform the run. For that reason all the files necessary to complete the run are prepared and can be downloaded at this [link](https://drive.google.com/file/d/1yDecFagh6e6YIb1y3V74WcIMKO0LaWpv/view?usp=drive_link). 
 
