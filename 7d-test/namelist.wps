@@ -1,0 +1,40 @@
+&share
+ wrf_core = 'ARW',
+ max_dom = 2,
+ io_form_geogrid = 2,
+ start_date = 2017-07-18_00:00:00, 2017-07-18_00:00:00,
+ end_date   = 2017-07-28_00:00:00, 2017-07-28_00:00:00,
+ interval_seconds = 3600,
+/
+
+&geogrid
+ parent_id              = 1, 1, 
+ parent_grid_ratio      = 1, 4, 
+ i_parent_start         = 1, 30, 
+ j_parent_start         = 1, 49,
+ dx                     = 12000,
+ dy                     = 12000,
+ e_we                   = 151, 257, 
+ e_sn                   = 158, 269,
+ map_proj 		= 'lambert',
+ ref_lat 		= 31.091,
+ ref_lon 		= 121.531,
+ truelat1 		= 30.0,
+ truelat2 		= 60.0,
+ stand_lon 		= 120.0,
+ geog_data_res          = 'cglc_modis_lcz+30s+default', 'cglc_modis_lcz+30s+default', 
+ geog_data_path         = '/HOME/fudan_jcyuan/fudan_jcyuanxy_2/HDD_POOL/data/WPS_GEOG',
+/
+
+&ungrib
+ out_format = 'WPS',
+ prefix = 'FILE',
+/
+
+&metgrid
+ constants_name = 'TAVGSFC',
+ fg_name = 'FILE',
+ io_form_metgrid = 2,
+/
+
+
