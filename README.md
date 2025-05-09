@@ -10,4 +10,4 @@ These experiments use CWC WRF v4.5.1.4
 git clone --recurse-submodules -b v4.5.1.4 https://github.com/CORDEX-WRF-community/WRF.git
 ```
 
-![WRF domains for Shanghai mini-ensemble](https://github.com/Yhao-Chen/Stage1-Shanghai-ensemble/blob/main/Stage1_Shanghai_ensemble_domain.png)
+![WRF domains for Shanghai mini-ensemble](https://github.com/Yhao-Chen/Stage1-Shanghai-ensemble/blob/main/Stage1_Shanghai-ensemble_domains.png)
