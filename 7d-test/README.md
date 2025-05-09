@@ -9,9 +9,10 @@ The downloaded file is a tar file and includes:
 
 ## 1. geo_em files 
 
-The geo_em.d0X.nc is created via ./geogrid.exe following the default setup in [namelist.wps](./namelist.wps) with 21 landuse categories. The other geo_em files were 
-created by w2w tool to implement the LCZ categories from **LCZ dataset**(T.B.D). The files **geo_em.d0X_LCZ_param.nc** contain LCZ categories (51-60), **geo_em.d0X_NoUrban.nc**
-transform all the urban types into croplands based on the LCZ dataset. The **geo_em.d0X_LCZ_extent.nc** file expands urban area as the same in the LCZ dataset but do not include LCZ imformations.
+The **geo_em.d0X.nc** is created via ./geogrid.exe following the default setup in [namelist.wps](./namelist.wps) with 21 landuse categories. The other geo_em files were 
+created by w2w tool to implement the LCZ categories from **LCZ dataset**(T.B.D). 
+
+The **geo_em.d0X_LCZ_param.nc** contains LCZ categories (51-60). The **geo_em.d0X_NoUrban.nc** transforms all the urban types into croplands based on the LCZ dataset. The **geo_em.d0X_LCZ_extent.nc** file expands urban area as the same in the LCZ dataset but do not include LCZ imformations.
    
 ```
 geo_em.d01.nc
@@ -44,9 +45,9 @@ wrflowinp_d02
 ```
 ## 5. namelist.wps and namelist.input:
 
-*[namelist.wps](./7d-test/namelist.wps)* defines 2 [domains](../Stage1_Shanghai-ensemble_domain.pngs): ESA-12 d01 - the outer domain in Lambert Conformal projection named EAS-12, and YRD-3 d02 - the inner domain centered around Shanghai.
+*[namelist.wps](./namelist.wps)* defines 2 [domains](../Stage1_Shanghai-ensemble_domain.pngs): ESA-12 d01 - the outer domain in Lambert Conformal projection named EAS-12, and YRD-3 d02 - the inner domain centered around Shanghai.
 
-*[namelist.input](./7d-test/namelist.input)* is set to run with BouLac PBL scheme (`bl_pbl_physics = 8`) and BEP+BEM urban scheme (`sf_urban_physics = 3`). 
+*[namelist.input](./namelist.input)* is set to run with BouLac PBL scheme (`bl_pbl_physics = 8`) and BEP+BEM urban scheme (`sf_urban_physics = 3`). 
 ```
 namelist.wps
 namelist.input
