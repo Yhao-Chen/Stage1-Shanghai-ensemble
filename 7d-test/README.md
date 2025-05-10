@@ -7,14 +7,15 @@ be downloaded at this **link**(in progress).
 
 The downloaded file is a tar file and includes:
 
-## 1. geo_em files 
+## 1. geo_em files in geofiles folder
 
 The **geo_em.d0X.nc** is created via ./geogrid.exe following the default setup in [namelist.wps](./namelist.wps) with 21 landuse categories. The other geo_em files were 
-created by w2w tool to implement the LCZ categories from **LCZ dataset**(T.B.D). 
+created by w2w tool to implement the LCZ categories from [Global-map-of-LCZ](https://doi.org/10.5281/zenodo.8419340). 
 
 The **geo_em.d0X_LCZ_param.nc** contains LCZ categories (51-60). The **geo_em.d0X_NoUrban.nc** transforms all the urban types into croplands based on the LCZ dataset. The **geo_em.d0X_LCZ_extent.nc** file expands urban area as the same in the LCZ dataset but do not include LCZ imformations.
    
 ```
+#cd geofiles
 geo_em.d01.nc
 geo_em.d01_LCZ_extent.nc
 geo_em.d01_LCZ_params.nc
@@ -26,6 +27,7 @@ geo_em.d02_NoUrban.nc
 ```
 ## 2. Aerosol climatology data created follow the instruction at [link](https://github.com/AEI-CORDyS/aerosols4wrf):
 ```
+#cd wrfinputs
 AOD_20170718_20170728_d01
 AOD_20170718_20170728_d02
 ```
@@ -33,10 +35,12 @@ AOD_20170718_20170728_d02
 
 The file that deletes/adds variables from/to the output if not changed in the Registry files (`iofields_filename` in namelist.input):
 ```
+#cd wrfinputs
 varlist.txt
 ```
-## 4. Input and boundary files:
+## 4. Input and boundary files created based on geo_em.d0X_LCZ_params.nc:
 ```
+#cd wrfinputs
 wrfbdy_d01
 wrfinput_d01
 wrfinput_d02
