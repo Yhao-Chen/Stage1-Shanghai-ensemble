@@ -12,7 +12,7 @@ The downloaded file is a tar file and includes:
 The **geo_em.d0X.nc** is created via ./geogrid.exe following the default setup in [namelist.wps](./namelist.wps) with 21 landuse categories. The other geo_em files were 
 created by w2w tool to implement the LCZ categories from [Global-map-of-LCZ](https://doi.org/10.5281/zenodo.8419340). 
 
-The **geo_em.d0X_LCZ_param.nc** contains LCZ categories (51-60). The **geo_em.d0X_NoUrban.nc** transforms all the urban types into croplands based on the LCZ dataset. The **geo_em.d0X_LCZ_extent.nc** file expands urban area as the same in the LCZ dataset but do not include LCZ imformations.
+The **geo_em.d0X_LCZ_param.nc** contains LCZ categories (51-60). The **geo_em.d0X_NoUrban.nc** transforms all the urban types into croplands based on the LCZ dataset. The **geo_em.d0X_LCZ_extent.nc** file has the same urban extents in geo_em.d0X_LCZ_params.nc but do not include LCZ imformations.
    
 ```
 #cd geofiles
