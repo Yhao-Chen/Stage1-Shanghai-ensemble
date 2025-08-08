@@ -7,7 +7,7 @@ This repository is created for the coordination of the WRF simulations within th
 
 These experiments use CWC WRF v4.5.1.4
 ```bash
-git clone --recurse-submodules -b v4.5.1.4 https://github.com/CORDEX-WRF-community/WRF.git
+git clone --recurse-submodules -b v4.5.1.7-devel https://github.com/CORDEX-WRF-community/WRF.git
 ```
 
-![WRF domains for Shanghai mini-ensemble](https://github.com/Yhao-Chen/Stage1-Shanghai-ensemble/blob/main/Stage1_Shanghai-ensemble_domains.png)
+![WRF domains for Shanghai mini-ensemble](https://github.com/Yhao-Chen/Stage1-Shanghai-ensemble/blob/main/Stage1/Stage1_Shanghai-ensembel_domains_final.png)
