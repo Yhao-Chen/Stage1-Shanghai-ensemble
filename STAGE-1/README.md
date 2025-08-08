@@ -33,7 +33,14 @@ The file that deletes/adds variables from/to the output if not changed in the Re
 varlist.txt
 ```
 
-## 4. namelist.wps and namelist.input:
+## 4. URBPARAM_LCZ.TBL
+
+The default urban morphological parameters.
+```
+URBPARAM_LCZ.TBL
+```
+
+## 5. namelist.wps and namelist.input:
 
 *[namelist.wps](./namelist.wps)* defines 2 [domains](./Stage1_Shanghai_ensemble_domains_final.png): ESA-12 d01 - the outer domain in Lambert Conformal projection named EAS-12, and YRD-4 d02 - the inner domain centered around Shanghai.
 *[namelist.input](./namelist.input)* is set to run with BouLac PBL scheme (`bl_pbl_physics = 8`) and BEP+BEM urban scheme (`sf_urban_physics = 3`). 
